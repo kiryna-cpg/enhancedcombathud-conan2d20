@@ -2,7 +2,7 @@
   "id": "enhancedcombathud-conan2d20",
   "title": "Argon - Combat HUD (CONAN2D20)",
   "description": "Argon HUD companion module for Conan 2d20 combat action economy and resource workflows.",
-  "version": "0.1.0",
+  "version": "0.1.6",
   "authors": [
     { "name": "Kiryna" }
   ],
