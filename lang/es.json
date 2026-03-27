@@ -1,0 +1,327 @@
+{
+  "ARGONC2D20": {
+    "Panel": {
+      "Standard": "AcciónEstándar",
+      "Minor": "Acción Menor",
+      "Reaction": "Reacción",
+      "Utility": "Utilidad",
+      "More": "Más"
+    },
+    "Resource": {
+      "Vigor": "Vigor",
+      "Resolve": "Resolución",
+      "Momentum": "Inercia",
+      "Doom": "Perdición"
+    },
+    "Drawer": {
+      "Resources": "Recursos"
+    },
+    "Tooltip": {
+      "NoAdditionalDetails": "Todavía no hay detalles adicionales.",
+      "ActionSubtitle": "Acción de Conan 2d20",
+      "AttackWithSelectedWeapon": "Ataca usando el arma seleccionada en el weapon set activo.",
+      "AttackWithSelectedPrimaryWeapon": "Ataca usando el arma primaria del weapon set activo.",
+      "AttackWithSelectedSecondaryWeapon": "Ataca usando el arma secundaria del weapon set activo.",
+      "AttackWithSelectedShield": "Ataca usando el escudo en el slot secundario. Los escudos también permiten Parry contra ataques a distancia, conceden Cover Soak mientras tengas Guard y pueden sacrificarse para evitar una Wound.",
+      "ReadyArmed": "Acción preparada: {action}. Disparador: {trigger}.",
+      "BraceArmed": "Arma preparada: {weapon}. Ignora las penalizaciones de Unwieldy hasta que el arma se mueva."
+    },
+    "Info": {
+      "ResourcesPlaceholder": "Placeholder del scaffold para el panel de recursos.",
+      "MomentumPlaceholder": "Placeholder del scaffold para el panel de Momentum.",
+      "ActionsReset": "La economía de acciones del combatiente actual se ha reseteado."
+    },
+    "Chat": {
+      "ScaffoldActionExecuted": "Acción del scaffold ejecutada.",
+      "PreparedRollWeapon": "Arma: {weapon}",
+      "PreparedRollDice": "Tirada preparada: {totalDice}d20 en total ({bonusDice} bonus d20).",
+      "PreparedRollCosts": "Costes — Vigor: {vigor}, Resolve: {resolve}, Inercia: {momentum}, {doomLabel}: {doom}.",
+      "SprintDeclared": "{actor} corre este asalto. Resolved el movimiento y el posicionamiento en mesa según corresponda.",
+      "WithdrawDeclared": "{actor} se retira con cautela este asalto. Resolved la retirada y el posicionamiento en mesa según corresponda.",
+      "ReadyDeclared": "{actor} prepara {action}. Disparador: {trigger}.",
+      "BraceDeclared": "{actor} prepara {weapon}. Ignora las penalizaciones de Unwieldy hasta que el arma se mueva.",
+      "AssistLaunchedNormal": "Ayudar se está resolviendo usando la regla normal de la mesa.",
+      "AssistLaunchedHouseRule": "Ayudar se está resolviendo usando la house rule configurada."
+    },
+    "Error": {
+      "ActionUnavailable": "La acción no está disponible en este momento."
+    },
+    "RollPrep": {
+      "Title": {
+        "Generic": "Preparar tirada",
+        "Attack": "Preparar tirada de ataque",
+        "SkillTest": "Preparar tirada de habilidad"
+      },
+      "Button": {
+        "Confirm": "Confirmar"
+      },
+      "Field": {
+        "RollDomain": "Dominio de la tirada",
+        "BaseDice": "Dados base",
+        "MaxDice": "Dados máximos",
+        "Weapon": "Arma",
+        "Vigor": "Vigor",
+        "Resolve": "Resolve",
+        "Momentum": "Inercia",
+        "DoomAdd": "Perdición (añadir al pool)",
+        "DoomSpend": "Perdición (gastar del pool)"
+      },
+      "Domain": {
+        "Physical": "Física",
+        "Mental": "Mental",
+        "Other": "Otra"
+      },
+      "Summary": {
+        "TotalDice": "Total: {totalDice}d20",
+        "BonusDice": "Bonus d20: {bonusDice} / {maxBonusDice}"
+      },
+      "Warning": {
+        "MaxBonusDice": "No puedes comprar más de {maxBonusDice} bonus d20 para esta tirada."
+      }
+    },   
+    "Action": {
+      "AttackMelee": "Ataque cuerpo a cuerpo",
+      "AttackRanged": "Ataque a distancia",
+      "Attack": "Atacar",      
+      "Threaten": "Amenazar",
+      "Assist": "Ayudar",
+      "Brace": "Preparar arma pesada",
+      "BraceArmed": "Preparar arma pesada (activa)",
+      "Clear": "Quitar condición",
+      "Defend": "Defender",
+      "DrawItem": "Desenvainar / sacar objeto",
+      "Exploit": "Explotar debilidad",
+      "Movement": "Movimiento",
+      "Pass": "Pasar Turno",
+      "Protect": "Proteger",
+      "Ready": "Preparar Acción",
+      "ReadyArmed": "Preparar Acción (armada)",
+      "ReadyExecuteDialog": {
+        "Title": "Ejecutar acción preparada",
+        "Content": "¿Quieres ejecutar ahora la acción guardada?<br><br><strong>Acción:</strong> {action}<br><strong>Disparador:</strong> {trigger}"
+      },
+      "Recover": "Recuperarse",
+      "ResetActions": "Resetear acciones",
+      "RegainGuard": "Recuperar Guardia",
+      "Retaliate": "Retaliar",
+      "SkillTest": "Tirada de habilidad",
+      "Sprint": "Correr",
+      "Stand": "Levantarse",
+      "Treatment": "Tratar Heridas",
+      "Withdraw": "Retirarse",
+      "OpenResources": "Recursos",
+      "OpenMomentum": "Momentum",
+      "Inventory": "Inventario",
+      "EndTurn": "Terminar turno"
+    },
+    "Disabled": {
+      "NoMeleeWeapon": "No hay arma cuerpo a cuerpo equipada.",
+      "NoRangedWeapon": "No hay arma a distancia equipada.",
+      "AlreadyGuarding": "Ya estás en Guardia.",
+      "CannotParry": "No puedes parar ataques ahora mismo.",
+      "NotYourTurn": "No es tu turno.",
+      "NoStandardAction": "No te quedan acciones Estándar.",
+      "NoMinorAction": "No te quedan acciones Menores.",
+      "NoReaction": "No te quedan Reacciones.",
+      "NoMovementAction": "No te quedan acciones de Movimiento este asalto.",
+      "GuardNotBroken": "Tu Guardia no está rota.",
+      "NotProne": "No estás tumbado.",
+      "NoClearableCondition": "No hay ninguna condición limpiable activa.",
+      "NoActiveWeaponSet": "No hay ningún arma de ataque asignada en el weapon set activo.",
+      "NoAttackAvailable": "Este actor no tiene ninguna fuente de ataque válida disponible.",
+      "BraceRequiresUnwieldy": "Brace requiere un arma Unwieldy en el weapon set activo.",
+      "AlreadyReady": "Este combatiente ya tiene una acción preparada almacenada.",
+      "AlreadyBraced": "El arma activa ya está preparada.",
+      "ReadyRequiresCombat": "Preparar Acción requiere un combatiente activo en combate.",
+      "BraceRequiresCombat": "Preparar arma pesada requiere un combatiente activo en combate.",
+      "NoSteelyGlare": "Este actor no tiene disponible el ataque Steely Glare.",
+      "NoThreatenAttack": "Este actor no tiene ninguna fuente válida de Amenazar disponible."
+    },
+    "Skill": {
+      "acr": "Acrobacias",
+      "alc": "Alquimia",
+      "ani": "Trato con animales",
+      "ath": "Atletismo",
+      "com": "Mando",
+      "cou": "Consejo",
+      "cra": "Artesanía",
+      "dis": "Disciplina",
+      "hea": "Curación",
+      "ins": "Perspicacia",
+      "lin": "Lingüística",
+      "lor": "Saber",
+      "mel": "Combate cuerpo a cuerpo",
+      "obs": "Observación",
+      "par": "Parada",
+      "per": "Persuadir",
+      "ran": "Armas a distancia",
+      "res": "Resistencia",
+      "sai": "Navegación",
+      "soc": "Sociedad",
+      "sor": "Hechicería",
+      "ste": "Sigilo",
+      "sur": "Supervivencia",
+      "thi": "Robo",
+      "war": "Guerra",
+      "cmb": "Combate",
+      "frt": "Fortaleza",
+      "knw": "Conocimiento",
+      "mov": "Movimiento",
+      "sns": "Sentidos",
+      "scl": "Social"
+    },
+    "ReadyPicker": {
+      "Title": "Preparar acción",
+      "Field": {
+        "Action": "Acción preparada",
+        "Trigger": "Disparador"
+      },
+      "Button": {
+        "Ready": "Guardar acción preparada"
+      },
+      "Error": {
+        "NoChoices": "No hay acciones soportadas disponibles para preparar."
+      },
+      "FallbackAction": "acción",
+      "FallbackTrigger": "sin disparador especificado"
+    },    
+    "SkillPicker": {
+      "Title": "Elegir tirada de habilidad",
+      "Field": {
+        "Skill": "Habilidad"
+      },
+      "Button": {
+        "Open": "Abrir roller"
+      },
+      "Error": {
+        "NoSkills": "Este actor no tiene habilidades disponibles."
+      }
+    },
+    "RecoverPicker": {
+      "Title": "Recuperarse",
+      "Field": {
+        "Mode": "Recuperar"
+      },
+      "Mode": {
+        "Physical": "Daño físico",
+        "Mental": "Daño mental"
+      },
+      "Button": {
+        "Open": "Abrir roller"
+      },
+      "Chat": {
+        "Launched": "Se ha abierto {skill} para {mode}. Resuelve la curación con la tirada del sistema y el gasto de Momentum."
+      }
+    },
+    "TreatmentPicker": {
+      "Title": "Tratamiento",
+      "Field": {
+        "Target": "Objetivo",
+        "Mode": "Tratar"
+      },
+      "Mode": {
+        "Physical": "Daño físico",
+        "Mental": "Daño mental"
+      },
+      "Button": {
+        "Open": "Abrir roller"
+      },
+      "Error": {
+        "NoTarget": "Selecciona primero a un aliado."
+      },
+      "Chat": {
+        "Launched": "Se ha abierto {skill} para tratar a {target} ({mode}). Resuelve la curación con la tirada del sistema y el gasto de Momentum."
+      }
+    },
+    "AssistPicker": {
+      "Title": "Ayudar",
+      "Field": {
+        "Target": "Aliado",
+        "Skill": "Habilidad"
+      },
+      "Button": {
+        "Open": "Abrir roller"
+      },
+      "Error": {
+        "NoTarget": "Selecciona primero a un aliado."
+      },
+      "Chat": {
+        "Launched": "Se ha abierto {skill} para ayudar a {target}. Resuelve la asistencia en la acción de ese aliado."
+      }
+    },
+    "ExploitPicker": {
+      "Title": "Explotar",
+      "Field": {
+        "Target": "Objetivo",
+        "Skill": "Habilidad"
+      },
+      "Button": {
+        "Open": "Abrir roller"
+      },
+      "Error": {
+        "NoTarget": "Selecciona primero a un enemigo."
+      },
+      "Chat": {
+        "Launched": "Se ha abierto {skill} para explotar a {target}. Si tiene éxito, el primer ataque antes del final de tu siguiente turno gana Piercing 2."
+      }
+    },
+    "Settings": {
+      "EnableHouseRules": {
+        "Name": "Activar revisión de reglas de mesa",
+        "Hint": "Activa el soporte para las reglas revisadas de Conan 2d20 usadas en esta mesa."
+      },
+      "EnableStressBonusDice": {
+        "Name": "Activar bonus d20 por Estrés",
+        "Hint": "Permite comprar bonus d20 con Vigor o Resolve antes de una tirada."
+      },
+      "EnableMomentumBonusDice": {
+        "Name": "Activar bonus d20 por Inercia",
+        "Hint": "Permite comprar bonus d20 con Inercia antes de una tirada."
+      },
+      "EnableDoomBonusDice": {
+        "Name": "Activar bonus d20 por Perdición",
+        "Hint": "Permite comprar bonus d20 con Perdición antes de una tirada."
+      },
+      "BonusDicePriority": {
+        "Name": "Prioridad de autoasignación de bonus d20",
+        "Hint": "Elige qué fuente se prioriza al autoasignar bonus d20.",
+        "Manual": "Manual",
+        "StressFirst": "Estrés primero",
+        "MomentumFirst": "Inercia primero",
+        "DoomFirst": "Perdición primero"
+      },
+      "AutoOpenBonusDice": {
+        "Name": "Abrir automáticamente la UI de bonus d20",
+        "Hint": "Abre automáticamente la UI de bonus d20 antes de tiradas relevantes."
+      },
+      "AutoOpenMomentum": {
+        "Name": "Abrir automáticamente la UI de Inercia",
+        "Hint": "Abre automáticamente la UI de gasto de Inercia tras tiradas exitosas."
+      },
+      "AutoPromptDefense": {
+        "Name": "Solicitar defensa automáticamente",
+        "Hint": "Solicita Parada o Esquiva al defensor cuando corresponda."
+      },
+      "ShowDoomToPlayers": {
+        "Name": "Mostrar Perdición a los jugadores",
+        "Hint": "Permite a los jugadores ver el Perdición en el HUD."
+      },
+      "AssistMode": {
+        "Name": "Modo de Ayudar",
+        "Hint": "Elige si Ayudar debe seguir la regla normal de la mesa o la house rule configurada.",
+        "Normal": "Regla normal",
+        "HouseRule": "House rule"
+      },
+      "MovementEconomyMode": {
+        "Name": "Economía de movimiento",
+        "Hint": "Elige si Correr y Retirarse también consumen el movimiento del asalto en Argon.",
+        "Off": "Desactivada",
+        "OnePerRound": "Una por asalto"
+      },
+      "Debug": {
+        "Name": "Registro de depuración",
+        "Hint": "Activa trazas detalladas en consola para desarrollo."
+      }
+    }
+  }
+}

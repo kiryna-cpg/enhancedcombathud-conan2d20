@@ -1,0 +1,32 @@
+{
+  "id": "enhancedcombathud-conan2d20",
+  "title": "Argon - Combat HUD (CONAN2D20)",
+  "description": "Argon HUD companion module for Conan 2d20 combat action economy and resource workflows.",
+  "version": "0.1.0",
+  "authors": [
+    { "name": "Kiryna" }
+  ],
+  "compatibility": {
+    "minimum": "13",
+    "verified": "13.351"
+  },
+  "relationships": {
+    "requires": [
+      { "id": "enhancedcombathud", "type": "module" }
+    ],
+    "systems": [
+      { "id": "conan2d20", "type": "system" }
+    ]
+  },
+  "esmodules": [
+    "scripts/module.js"
+  ],
+  "styles": [
+    "styles/module.css"
+  ],
+  "languages": [
+    { "lang": "en", "name": "English", "path": "lang/en.json" },
+    { "lang": "es", "name": "Español", "path": "lang/es.json" }
+  ],
+  "license": "MIT"
+}

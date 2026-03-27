@@ -1,0 +1,325 @@
+{
+  "ARGONC2D20": {
+    "Panel": {
+      "Standard": "Standard",
+      "Minor": "Minor",
+      "Reaction": "Reaction",
+      "Utility": "Utility",
+      "More": "More"
+    },
+    "Resource": {
+      "Vigor": "Vigor",
+      "Resolve": "Resolve",
+      "Momentum": "Momentum",
+      "Doom": "Doom"
+    },
+    "Drawer": {
+      "Resources": "Resources"
+    },
+    "Tooltip": {
+      "NoAdditionalDetails": "No additional details yet.",
+      "ActionSubtitle": "Conan 2d20 action",
+      "AttackWithSelectedWeapon": "Attack using the weapon selected in the active weapon set.",
+      "AttackWithSelectedPrimaryWeapon": "Attack using the primary weapon in the active weapon set.",
+      "AttackWithSelectedSecondaryWeapon": "Attack using the secondary weapon in the active weapon set.",
+      "AttackWithSelectedShield": "Attack using the shield in the secondary slot. Shields also allow Parry against ranged attacks, grant Cover Soak while you have Guard, and may be sacrificed to avoid a Wound.",
+      "ReadyArmed": "Readied action: {action}. Trigger: {trigger}.",
+      "BraceArmed": "Braced weapon: {weapon}. Ignore Unwieldy penalties until the weapon is moved."
+    },
+    "Info": {
+      "ResourcesPlaceholder": "Resource panel scaffold placeholder.",
+      "MomentumPlaceholder": "Momentum panel scaffold placeholder.",
+      "ActionsReset": "Action economy reset for the current combatant."
+    },
+    "Chat": {
+      "ScaffoldActionExecuted": "Scaffold action executed.",
+      "PreparedRollWeapon": "Weapon: {weapon}",
+      "PreparedRollDice": "Prepared roll: {totalDice}d20 total ({bonusDice} bonus d20).",
+      "PreparedRollCosts": "Costs — Vigor: {vigor}, Resolve: {resolve}, Momentum: {momentum}, {doomLabel}: {doom}.",
+      "SprintDeclared": "{actor} sprints this round. Resolve movement and positioning at the table as appropriate.",
+      "WithdrawDeclared": "{actor} withdraws cautiously this round. Resolve disengagement and positioning at the table as appropriate.",
+      "ReadyDeclared": "{actor} readies {action}. Trigger: {trigger}.",
+      "BraceDeclared": "{actor} braces {weapon}. Ignore Unwieldy penalties until the weapon is moved.",
+      "AssistLaunchedNormal": "Assist is being resolved using the normal table rule.",
+      "AssistLaunchedHouseRule": "Assist is being resolved using the configured house rule."
+    },
+    "Error": {
+      "ActionUnavailable": "Action is currently unavailable."
+    },
+    "RollPrep": {
+      "Title": {
+        "Generic": "Prepare roll",
+        "Attack": "Prepare attack roll",
+        "SkillTest": "Prepare skill test"
+      },
+      "Button": {
+        "Confirm": "Confirm"
+      },
+      "Field": {
+        "RollDomain": "Roll domain",
+        "BaseDice": "Base dice",
+        "MaxDice": "Maximum dice",
+        "Weapon": "Weapon",
+        "Vigor": "Vigor",
+        "Resolve": "Resolve",
+        "Momentum": "Momentum",
+        "DoomAdd": "Doom (add to pool)",
+        "DoomSpend": "Doom (spend from pool)"
+      },
+      "Domain": {
+        "Physical": "Physical",
+        "Mental": "Mental",
+        "Other": "Other"
+      },
+      "Summary": {
+        "TotalDice": "Total: {totalDice}d20",
+        "BonusDice": "Bonus d20: {bonusDice} / {maxBonusDice}"
+      },
+      "Warning": {
+        "MaxBonusDice": "You cannot buy more than {maxBonusDice} bonus d20 for this roll."
+      }
+    },  
+    "Action": {
+      "AttackMelee": "Melee Attack",
+      "AttackRanged": "Ranged Attack",
+      "Attack": "Attack",      
+      "Threaten": "Threaten",
+      "Assist": "Assist",
+      "Brace": "Brace",
+      "BraceArmed": "Brace (armed)",
+      "Clear": "Clear",
+      "Defend": "Defend",
+      "DrawItem": "Draw Item",
+      "Exploit": "Exploit",
+      "Movement": "Movement",
+      "Pass": "Pass",
+      "Protect": "Protect",
+      "Ready": "Ready",
+      "ReadyArmed": "Ready (armed)",
+      "ReadyExecuteDialog": {
+        "Title": "Execute readied action",
+        "Content": "Execute the stored action now?<br><br><strong>Action:</strong> {action}<br><strong>Trigger:</strong> {trigger}"
+      },
+      "Recover": "Recover",
+      "ResetActions": "Reset Actions",
+      "RegainGuard": "Regain Guard",
+      "Retaliate": "Retaliate",
+      "SkillTest": "Skill Test",
+      "Sprint": "Sprint",
+      "Stand": "Stand",
+      "Treatment": "Treatment",
+      "Withdraw": "Withdraw",
+      "OpenResources": "Resources",
+      "OpenMomentum": "Momentum",
+      "Inventory": "Inventory",
+      "EndTurn": "End Turn"
+    },
+    "Disabled": {
+      "NoMeleeWeapon": "No equipped melee weapon.",
+      "NoRangedWeapon": "No equipped ranged weapon.",
+      "AlreadyGuarding": "Already guarding.",
+      "CannotParry": "Cannot parry in current state.",
+      "NotYourTurn": "It is not your turn.",
+      "NoStandardAction": "No Standard action remaining.",
+      "NoMinorAction": "No Minor action remaining.",
+      "NoReaction": "No Reaction remaining.",
+      "NoMovementAction": "No Movement action remaining this round.",
+      "GuardNotBroken": "Guard has not been broken.",
+      "NotProne": "Character is not prone.",
+      "NoClearableCondition": "No clearable condition is active.",
+      "NoActiveWeaponSet": "No attack weapon is assigned in the active weapon set.",
+      "BraceRequiresUnwieldy": "Brace requires an Unwieldy weapon in the active weapon set.",
+      "AlreadyReady": "A readied action is already stored for this combatant.",
+      "AlreadyBraced": "The active weapon is already braced.",
+      "ReadyRequiresCombat": "Ready requires an active combatant in combat.",
+      "BraceRequiresCombat": "Brace requires an active combatant in combat.",
+      "NoSteelyGlare": "No Steely Glare attack is available on this actor."
+    },
+    "Skill": {
+      "acr": "Acrobatics",
+      "alc": "Alchemy",
+      "ani": "Animal Handling",
+      "ath": "Athletics",
+      "com": "Command",
+      "cou": "Counsel",
+      "cra": "Craft",
+      "dis": "Discipline",
+      "hea": "Healing",
+      "ins": "Insight",
+      "lin": "Linguistics",
+      "lor": "Lore",
+      "mel": "Melee",
+      "obs": "Observation",
+      "par": "Parry",
+      "per": "Persuade",
+      "ran": "Ranged Weapons",
+      "res": "Resistance",
+      "sai": "Sailing",
+      "soc": "Society",
+      "sor": "Sorcery",
+      "ste": "Stealth",
+      "sur": "Survival",
+      "thi": "Thievery",
+      "war": "Warfare",
+      "cmb": "Combat",
+      "frt": "Fortitude",
+      "knw": "Knowledge",
+      "mov": "Movement",
+      "sns": "Senses",
+      "scl": "Social"
+    },
+    "ReadyPicker": {
+      "Title": "Ready action",
+      "Field": {
+        "Action": "Readied action",
+        "Trigger": "Trigger"
+      },
+      "Button": {
+        "Ready": "Store ready action"
+      },
+      "Error": {
+        "NoChoices": "No supported actions are available to ready."
+      },
+      "FallbackAction": "action",
+      "FallbackTrigger": "no trigger specified"
+    },    
+    "SkillPicker": {
+      "Title": "Choose skill test",
+      "Field": {
+        "Skill": "Skill"
+      },
+      "Button": {
+        "Open": "Open roller"
+      },
+      "Error": {
+        "NoSkills": "This actor has no available skills."
+      }
+    },
+    "RecoverPicker": {
+      "Title": "Recover",
+      "Field": {
+        "Mode": "Recover"
+      },
+      "Mode": {
+        "Physical": "Physical damage",
+        "Mental": "Mental damage"
+      },
+      "Button": {
+        "Open": "Open roller"
+      },
+      "Chat": {
+        "Launched": "Opened {skill} for {mode}. Resolve the healing from the system roll and Momentum spend."
+      }
+    },
+    "TreatmentPicker": {
+      "Title": "Treatment",
+      "Field": {
+        "Target": "Target",
+        "Mode": "Treat"
+      },
+      "Mode": {
+        "Physical": "Physical damage",
+        "Mental": "Mental damage"
+      },
+      "Button": {
+        "Open": "Open roller"
+      },
+      "Error": {
+        "NoTarget": "Target an ally first."
+      },
+      "Chat": {
+        "Launched": "Opened {skill} to treat {target} ({mode}). Resolve healing from the system roll and Momentum spend."
+      }
+    },
+    "AssistPicker": {
+      "Title": "Assist",
+      "Field": {
+        "Target": "Ally",
+        "Skill": "Skill"
+      },
+      "Button": {
+        "Open": "Open roller"
+      },
+      "Error": {
+        "NoTarget": "Target an ally first."
+      },
+      "Chat": {
+        "Launched": "Opened {skill} to assist {target}. Resolve the assistance on that ally’s action."
+      }
+    },
+    "ExploitPicker": {
+      "Title": "Exploit",
+      "Field": {
+        "Target": "Target",
+        "Skill": "Skill"
+      },
+      "Button": {
+        "Open": "Open roller"
+      },
+      "Error": {
+        "NoTarget": "Target a foe first."
+      },
+      "Chat": {
+        "Launched": "Opened {skill} to exploit {target}. On success, the first attack before the end of your next turn gains Piercing 2."
+      }
+    },
+    "Settings": {
+      "EnableHouseRules": {
+        "Name": "Enable house rules revision",
+        "Hint": "Enable support for the revised Conan 2d20 rules used in this table."
+      },
+      "EnableStressBonusDice": {
+        "Name": "Enable Stress bonus dice",
+        "Hint": "Allow buying bonus d20s with Vigor or Resolve before a roll."
+      },
+      "EnableMomentumBonusDice": {
+        "Name": "Enable Momentum bonus dice",
+        "Hint": "Allow buying bonus d20s with Momentum before a roll."
+      },
+      "EnableDoomBonusDice": {
+        "Name": "Enable Doom bonus dice",
+        "Hint": "Allow buying bonus d20s with Doom before a roll."
+      },
+      "BonusDicePriority": {
+        "Name": "Bonus dice auto-allocation priority",
+        "Hint": "Choose which source is preferred when auto-allocating bonus dice.",
+        "Manual": "Manual",
+        "StressFirst": "Stress first",
+        "MomentumFirst": "Momentum first",
+        "DoomFirst": "Doom first"
+      },
+      "AutoOpenBonusDice": {
+        "Name": "Auto-open bonus dice UI",
+        "Hint": "Automatically open the bonus dice UI before relevant rolls."
+      },
+      "AutoOpenMomentum": {
+        "Name": "Auto-open Momentum UI",
+        "Hint": "Automatically open Momentum spend UI after successful rolls."
+      },
+      "AutoPromptDefense": {
+        "Name": "Auto-prompt defense",
+        "Hint": "Prompt the defender for Parry or Dodge when applicable."
+      },
+      "ShowDoomToPlayers": {
+        "Name": "Show Doom to players",
+        "Hint": "Allow players to see Doom in the HUD."
+      },
+      "AssistMode": {
+        "Name": "Assist mode",
+        "Hint": "Choose whether Assist should follow the normal table rule or the configured house rule.",
+        "Normal": "Normal rule",
+        "HouseRule": "House rule"
+      },
+      "MovementEconomyMode": {
+        "Name": "Movement economy",
+        "Hint": "Choose whether Sprint and Withdraw also consume the round’s movement allowance in Argon.",
+        "Off": "Disabled",
+        "OnePerRound": "One per round"
+      },
+      "Debug": {
+        "Name": "Debug logging",
+        "Hint": "Enable verbose console logging for development."
+      }
+    }
+  }
+}

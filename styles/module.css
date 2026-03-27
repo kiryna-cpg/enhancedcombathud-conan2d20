@@ -1,0 +1,92 @@
+.argon-conan2d20-hidden {
+  display: none !important;
+}
+
+.argon-conan2d20-chat-card {
+  padding: 0.5rem 0.75rem;
+}
+
+.extended-combat-hud .action-element.argon-c2d20-invalid,
+.extended-combat-hud .feature-element.argon-c2d20-invalid {
+  opacity: 1;
+  filter: none;
+  background-color: rgba(90, 24, 24, 0.92) !important;
+  border-color: rgba(130, 40, 40, 0.98) !important;
+  color: var(--ech-mainAction-base-color) !important;
+}
+
+.extended-combat-hud .action-element.argon-c2d20-invalid:hover,
+.extended-combat-hud .action-element.argon-c2d20-invalid:active,
+.extended-combat-hud .action-element.argon-c2d20-invalid:focus,
+.extended-combat-hud .feature-element.argon-c2d20-invalid:hover,
+.extended-combat-hud .feature-element.argon-c2d20-invalid:active,
+.extended-combat-hud .feature-element.argon-c2d20-invalid:focus {
+  background-color: rgba(90, 24, 24, 0.92) !important;
+  border-color: rgba(130, 40, 40, 0.98) !important;
+  color: var(--ech-mainAction-base-color) !important;
+  filter: none !important;
+  opacity: 1 !important;
+}
+
+.extended-combat-hud .action-element.argon-c2d20-invalid.has-count:before,
+.extended-combat-hud .action-element.argon-c2d20-invalid .quantity-1 .border-triangle,
+.extended-combat-hud .action-element.argon-c2d20-invalid .quantity-2 .border-triangle,
+.extended-combat-hud .feature-element.argon-c2d20-invalid.has-count:before,
+.extended-combat-hud .feature-element.argon-c2d20-invalid .quantity-1 .border-triangle,
+.extended-combat-hud .feature-element.argon-c2d20-invalid .quantity-2 .border-triangle {
+  border-top-color: rgba(90, 24, 24, 0.92) !important;
+}
+
+.argon-c2d20-rollprep {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 20rem;
+}
+
+.argon-c2d20-rollprep-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.argon-c2d20-rollprep-row label {
+  font-weight: 600;
+}
+
+.argon-c2d20-rollprep-row input,
+.argon-c2d20-rollprep-row select {
+  width: 6rem;
+}
+
+.argon-c2d20-rollprep-static {
+  min-width: 6rem;
+  text-align: right;
+}
+
+.argon-c2d20-rollprep-summary {
+  margin-top: 0.25rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border-light-2);
+}
+
+.argon-c2d20-skillpicker {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 18rem;
+}
+
+.argon-c2d20-skillpicker-row {
+  display: grid;
+  gap: 0.4rem;
+}
+
+.argon-c2d20-readypicker textarea {
+  min-height: 4.5rem;
+  resize: vertical;
+}
+
+.extended-combat-hud .action-element.argon-c2d20-armed,
+.extended-combat-hud .feature-element.argon-c2d20-armed {
+  box-shadow: inset 0 0 0 2px rgba(92, 164, 92, 0.95);
+}
