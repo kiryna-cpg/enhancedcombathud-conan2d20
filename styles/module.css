@@ -90,3 +90,18 @@
 .extended-combat-hud .feature-element.argon-c2d20-armed {
   box-shadow: inset 0 0 0 2px rgba(92, 164, 92, 0.95);
 }
+
+.extended-combat-hud .action-element-container.argon-c2d20-horizontal-split {
+  display: flex;
+  flex-direction: row;
+  gap: 0.25rem;
+  width: 100%;
+  height: 100%;
+}
+
+.extended-combat-hud .action-element-container.argon-c2d20-horizontal-split > .action-element,
+.extended-combat-hud .action-element-container.argon-c2d20-horizontal-split > .feature-element {
+  flex: 1 1 0;
+  min-width: 0;
+  height: 100%;
+}

@@ -153,12 +153,16 @@ function getReadyChoiceActions(ctx) {
 }
 
 async function confirmExecuteReadiedAction(readyState) {
-  return Dialog.confirm({
-    title: game.i18n.localize("ARGONC2D20.Action.ReadyExecuteDialog.Title"),
+  return foundry.applications.api.DialogV2.confirm({
+    window: {
+      title: game.i18n.localize("ARGONC2D20.Action.ReadyExecuteDialog.Title")
+    },
     content: `<p>${game.i18n.format("ARGONC2D20.Action.ReadyExecuteDialog.Content", {
       action: readyState?.actionLabel || game.i18n.localize("ARGONC2D20.ReadyPicker.FallbackAction"),
       trigger: readyState?.triggerText || game.i18n.localize("ARGONC2D20.ReadyPicker.FallbackTrigger")
-    })}</p>`
+    })}</p>`,
+    rejectClose: false,
+    modal: true
   });
 }
 

@@ -12,7 +12,7 @@ import { clearBraceState } from "../../services/tactical-state-service.js";
 
 const ICONS = {
   ATTACK: "modules/enhancedcombathud/icons/svg/crossed-swords.svg",
-  THREATEN: "modules/enhancedcombathud/icons/svg/screaming.svg",
+  THREATEN: "modules/enhancedcombathud-conan2d20/icons/svg/embrassed-energy.svg",
   WITHDRAW: "modules/enhancedcombathud/icons/svg/walking-boot.svg",
   SPRINT: "modules/enhancedcombathud/icons/svg/run.svg",
   RECOVER: "modules/enhancedcombathud-conan2d20/icons/svg/health-increase.svg",
